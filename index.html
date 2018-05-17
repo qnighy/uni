@@ -1,0 +1,23 @@
+<!doctype html>
+<!-- ✹ -->
+<meta charset="utf-8">
+<div id="うに"></div>
+<script type="text/javascript">
+const うに = document.querySelector("#うに");
+const うにに = "u".charCodeAt(0) + "n".charCodeAt(0) + "i".charCodeAt(0);
+const にう = Array(うにに + 1);
+for(let に = 2; に*に <= うにに; ++に) {
+  if(にう[に]) continue;
+  for(let う = に*に; う <= うにに; う+=に) {
+    にう[う] = うにに;
+  }
+}
+let にに = 0;
+setInterval(() => {
+  にに++;
+  にに %= うにに;
+  if(!にう[にに]) {
+    うに.innerText += "うに"[(Math.random() * 2)|0];
+  }
+}, 10);
+</script>
